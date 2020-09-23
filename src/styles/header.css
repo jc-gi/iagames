@@ -1,0 +1,144 @@
+.Main-Header {
+  background-color: #fff;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: #1976d2;
+  padding: 16px 0px;
+  transition: background-color 0.5s ease;
+}
+
+.Main-Header-Dark {
+  background-color: #1c1f24;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: #1976d2;
+  padding: 16px 0px;
+  transition: background-color 0.5s ease;
+}
+
+.NavLink-Element {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #222;
+  height: 34px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.NavLink-Element:hover,
+.NavLink-Element-Dark:hover {
+  color: #039be5;
+  text-decoration: none;
+}
+
+.NavLink-Element-Dark {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #fff;
+  height: 34px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.Combo-light {
+  font-size: 17px;
+  font: inherit;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: -4vh;
+  text-rendering: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #5a5a5a;
+  background: #dedede;
+  color: #222;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  transition: border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.Combo-light:focus {
+  border: 2px solid #039be5;
+}
+
+.Combo-Dark {
+  font-size: 17px;
+  font: inherit;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: -4vh;
+  text-rendering: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #5a5a5a;
+  background: #333;
+  color: white;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  transition: border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.Combo-Dark:focus {
+  border: 2px solid #039be5;
+}
+
+.svg-icon-light {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  fill: #222;
+}
+
+.svg-icon-dark {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  fill: #fff;
+}
+
+.svg-moon {
+  fill: #222;
+  transition: fill 0.15s ease;
+}
+.svg-moon:hover,
+.svg-sun:hover {
+  fill: #039be5;
+  cursor: pointer;
+}
+
+.svg-sun {
+  fill: #ffffff;
+  transition: fill 0.15s ease;
+}
+
+@media (max-width: 700px) {
+  .Combo-light,
+  .Combo-Dark,
+  .svg-icon-dark,
+  .svg-icon-light {
+    display: none;
+  }
+  .svg-moon,
+  .svg-sun {
+    margin-right: 40px;
+    width: 30px;
+  }
+}
